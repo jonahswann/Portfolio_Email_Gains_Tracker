@@ -68,17 +68,18 @@ treasury_hist = treasury_data.history(period="1d")
 latest_yield = round(treasury_hist['Close'].iloc[-1], 2)
 risk_free_rate = latest_yield / 100 / 252  # Convert annual yield to daily risk-free rate
 
+#This is a random example portfolio
 portfolios = {
     'TMT': {
         'tickers': ['AAPL', 'CRM', 'GENI', 'GOOGL', 'MGNI', 'MSFT', 'NET', 'NXPI', 'INTU'],
         'shares': {
-            'AAPL': 30,
-            'CRM': 19,
-            'GENI': 689,
-            'GOOGL': 33,
-            'MGNI': 330,
-            'MSFT': 14,
-            'NET': 57,
+            'AAPL': 320,
+            'CRM': 219,
+            'GENI': 6389,
+            'GOOGL': 233,
+            'MGNI': 3230,
+            'MSFT': 124,
+            'NET': 572,
             'NXPI': 15,
             'INTU': 3
         }
@@ -89,11 +90,11 @@ portfolios = {
             'BMY': 52,
             'DXCM': 50,
             'ENSG': 33,
-            'EW': 30,
+            'EW': 320,
             'EXAS': 51,
-            'HCA': 14,
+            'HCA': 142,
             'ISRG': 11,
-            'MCK': 8,
+            'MCK': 28,
             'TMO': 7,
             'VRTX': 8
         }
@@ -106,7 +107,7 @@ portfolios = {
             'FTV': 39,
             'LHX': 18,
             'PCAR': 30,
-            'ROK': 13,
+            'ROK': 132,
             'RTX': 36.4472,
             'TREX': 32,
             'URI': 2.0379,
@@ -117,7 +118,7 @@ portfolios = {
     'Consumer': {
         'tickers': ['CL', 'HSY', 'KO', 'LVMUY', 'MGM', 'PG', 'TGT', 'ULTA'],
         'shares': {
-            'CL': 42,
+            'CL': 422,
             'HSY': 21,
             'KO': 62,
             'LVMUY': 21,
@@ -137,7 +138,7 @@ portfolios = {
             'BRO': 40,
             'DFIN': 57,
             'IBKR': 23,
-            'SSNC': 43,
+            'SSNC': 243,
             'V': 15,
             'VIRT': 73
         }
@@ -145,14 +146,14 @@ portfolios = {
     'Energy': {
         'tickers': ['AESI', 'COP', 'ET', 'HLX', 'KMI', 'NEE', 'WMB', 'XOM', 'FCG'],
         'shares': {
-            'AESI': 132,
+            'AESI': 1322,
             'COP': 31.7071,
             'ET': 312,
             'HLX': 365,
             'KMI': 143.754,
             'NEE': 38,
             'WMB': 136.4785,
-            'XOM': 35,
+            'XOM': 315,
             'FCG': 173.9702
         }
     }
@@ -479,24 +480,7 @@ plt.close()
 
 # Set the email content
 recipient_emails = [
-    "swann.jonah@gmail.com",
-    "jswann@smu.edu",
-    "clspence@mail.smu.edu",
-    "owhitman@mail.smu.edu",
-    "ngiesen@mail.smu.edu",
-    "skravutske@mail.smu.edu",
-    "dwierzbicki@mail.smu.edu",
-    "mmerlin@mail.smu.edu",
-    "aghawn@mail.smu.edu",
-    "hhoch@mail.smu.edu",
-    "cmbarron@mail.smu.edu",
-    "ntansen@mail.smu.edu",
-    "michaelwilson@mail.smu.edu",
-    "ehernandezposada@mail.smu.edu",
-    "jcbenavides@mail.smu.edu",
-    "rrobb@mail.msmu.edu",
-    "jdwinfield@mail.smu.edu",
-    "ccandelario@mail.smu.edu",
+# Fill in emails here,
 ]
 email_subject = "BIG Daily Stock Performance"
 
